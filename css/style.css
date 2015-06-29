@@ -23,6 +23,7 @@ h4,
 h5,
 h6 {
   font-family: "Raleway", cursive;
+  font-weight: 700;
 }
 
 
@@ -61,8 +62,32 @@ form {
 }
 
 button {
-  padding: 10px;
-}
+  text-align: center;
+  width: 80%;
+  padding: .5em;
+  font-size: 20px;
+  font-size: 1.25em;
+  font-family: "Raleway", cursive;
+  font-weight: 700;
+  outline: 0;
+  border: 0;
+  box-shadow: 0 5px 0 #999999;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  border-radius: 5px;
+  color: #FFFFFF;
+  background-color: rgb(89,106,218);
+  transition: linear background-color .25s;
+  }
+  button:hover, button:active {
+    background-color: rgb(47,65,185);
+    outline: 0;
+    border: 0; }
+  button:active {
+    position: relative;
+    top: 5px;
+    box-shadow: 0 0 1px #999999; }
 
 .summary {
   clear: both;

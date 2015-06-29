@@ -21,7 +21,7 @@ angular.module('thankYouApp', [])
     $scope.phone = '847.852.0696';
     $scope.email = 'tylerbsilva@gmail.com';
     $scope.pathToResume = 'assets/Silva_Tyler_Resume.pdf';
-    $scope.summary = 'A results-driven, front end developer seeking a role that will allow me to advance my expertise in web development. Heavily influenced by my design background, and three years of experience in  the athletic and entertainment industries, my skillset is diversified to aide in any situation. I am creative, spontaneous, and adapt well to all environments. Nearing completion of <a href="https://www.thinkful.com/">Thinkful</a>’s Front End Development bootcamp, I am eager to take my web development career to the next level.';
+    $scope.summary = 'A results-driven, front end developer seeking a role that will allow me to advance my expertise in web development. Heavily influenced by my design background, and three years of experience in  the athletic and entertainment industries, my skillset is diversified to aide in any situation. I am creative, spontaneous, and adapt well to all environments. Nearing completion of Thinkful’s Front End Development bootcamp, I am eager to take my web development career to the next level.';
     // set your social media accounts
     $scope.facebook = 'ty.silva';
     $scope.twitter = 'tysilva';
