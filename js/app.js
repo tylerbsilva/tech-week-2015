@@ -1,5 +1,5 @@
-angular.module('thankYouApp', ['ngRoute'])
-  .controller('thankYouController', ['$scope', '$http', '$location', '$route', function($scope, $http, $location, $route){
+angular.module('thankYouApp', [])
+  .controller('thankYouController', ['$scope', '$http', '$location', function($scope, $http, $location){
     // grab the path
     $scope.wayfinding = $location.path();
     // remove the slash
