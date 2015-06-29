@@ -4,7 +4,7 @@ angular.module('thankYouApp', [])
     $scope.wayfinding = $location.path();
     console.log($scope.wayfinding);
     // remove the slash
-    $scope.company = $scope.wayfinding.substring(2);
+    $scope.company = $scope.wayfinding.substring(1);
     console.log($scope.company);
     // get recruiter list
     $http.get('./assets/recruiters.JSON').
