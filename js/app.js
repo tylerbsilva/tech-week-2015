@@ -32,20 +32,20 @@ angular.module('thankYouApp', [])
   .directive('thankYou', function(){
     return {
       restrict: 'E',
-      templateUrl: '/js/templates/thank-you.html'
+      templateUrl: './js/templates/thank-you.html'
     };
   })
 
   .directive('basicInfo', function(){
     return {
       restrict: 'E',
-      templateUrl: '/js/templates/basic-info.html'
+      templateUrl: './js/templates/basic-info.html'
     };
   })
 
   .directive('socialMedia', function(){
     return {
       restrict: 'E',
-      templateUrl: '/js/templates/social-media.html'
+      templateUrl: './js/templates/social-media.html'
     };
   });
