@@ -5,7 +5,7 @@ angular.module('thankYouApp', [])
     // remove the slash
     $scope.company = $scope.wayfinding.substring(1);
     // get recruiter list
-    $http.get('assets/recruiters.JSON').
+    $http.get('./assets/recruiters.JSON').
     success(function(data, status, headers, config) {
       $scope.data = data[$scope.company];
       // set user info
