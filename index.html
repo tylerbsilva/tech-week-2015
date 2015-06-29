@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang="en" ng-app="">
+<html lang="en" ng-app="thankYouApp">
   <head>
     <meta charset="UTF-8">
-    <title>Thank you {{tech.name}}!</title>
+    <title>Thank you {{recruiter.name}}!</title>
     <!-- FAVICONS -->
     <link rel="apple-touch-icon" sizes="57x57" href="assets/favicon/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="assets/favicon/apple-icon-60x60.png">
@@ -30,41 +30,14 @@
     <script src="js/app.js"></script>
   </head>
   <body>
-    <header>
-      <h1>Thank you, NAME!</h1>
-      <!-- inject thank you message here -->
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro ipsum rem aut alias reiciendis delectus voluptatem ut, accusantium reprehenderit repudiandae placeat amet modi quis. Quasi, dignissimos omnis quos tempore dolor.</p>
+    <header ng-conroller="thankYouController">
+      <thank-you></thank-you>
     </header>
-    <hr>
-    <section>
-      <div class="basic">
-        <div class="half">
-          <img src="assets/header-image.png" alt="Tyler Silva Picture">
-        </div>
-        <div class="half">
-          <h3>BASIC INFO:</h3>
-          <ul>
-            <li><strong>Name: </strong>Tyler Silva</li>
-            <li><strong>Title: </strong>Front End Web Developer</li>
-            <li><strong>Website: </strong><a href="http://www.tylerbsilva.com">tylerbsilva.com</a></li>
-            <li><strong>E-Mail: </strong><a href="mailto:tylerbsilva@gmail.com?subject=TechWeek2015">tylerbsilva@gmail.com</a></li>
-            <li><strong>Phone: </strong><a href="tel:+18478520696">(847) 852-0696</a></li>
-          </ul>
-          <form method="get" action="assets/Silva_Tyler_Resume.pdf">
-            <button type="submit">RESUME</button>
-          </form>
-        </div>
-      </div>
-      <div class="summary">
-        <h3>SUMMARY:</h3>
-        <p>A results-driven, front end developer seeking a role that will allow me to advance my expertise in web development. Heavily influenced by my design background, and three years of experience in  the athletic and entertainment industries, my skillset is diversified to aide in any situation. I am creative, spontaneous, and adapt well to all environments. Nearing completion of <a href="https://www.thinkful.com/">Thinkful</a>’s Front End Development bootcamp, I am eager to take my web development career to the next level.</p>
-      </div>
+    <section ng-controller="basicInfoController">
+      <basic-info></basic-info>
     </section>
-    <footer>
-      <a href="https://www.facebook.com/ty.silva" target="_blank"><i class="fa fa-facebook-square fa-lg"></i></a>
-      <a href="https://www.twitter.com/tysilva" target="_blank"><i class="fa fa-twitter fa-lg"></i></a>
-      <a href="https://www.github.com/tylerbsilva" target="_blank"><i class="fa fa-github fa-lg"></i></a>
-      <a href="https://www.linkedin.com/in/tylerbsilva" target="_blank"><i class="fa fa-linkedin fa-lg"></i></a>
+    <footer ng-controller="socialMediaController">
+      <social-media></social-media>
     </footer>
   </body>
 </html>
