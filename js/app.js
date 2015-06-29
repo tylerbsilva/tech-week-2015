@@ -2,12 +2,14 @@ angular.module('thankYouApp', [])
   .controller('thankYouController', ['$scope', '$http', '$location', function($scope, $http, $location){
     // grab the path
     $scope.wayfinding = $location.path();
+    console.log($scope.wayfinding);
     // remove the slash
     $scope.company = $scope.wayfinding.substring(1);
     // get recruiter list
     $http.get('./assets/recruiters.JSON').
     success(function(data, status, headers, config) {
       $scope.data = data[$scope.company];
+
       // set user info
       $scope.userName = $scope.data.name;
       $scope.message = $scope.data.message;
