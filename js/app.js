@@ -9,11 +9,15 @@ angular.module('thankYouApp', [])
     // get recruiter list
     $http.get('./assets/recruiters.JSON').
     success(function(data, status, headers, config) {
+      console.log(data);
       $scope.data = data[$scope.company];
 
       // set user info
       $scope.userName = $scope.data.name;
       $scope.message = $scope.data.message;
+    })
+    .error(function(){
+      console.log("No data found");
     });
     // set your own personal data
     $scope.eventName = 'TechWeek2015';
