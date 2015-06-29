@@ -7,7 +7,7 @@ angular.module('thankYouApp', [])
     $scope.company = $scope.wayfinding.substring(1);
     console.log($scope.company);
     // get recruiter list
-    $http.get('./assets/recruiters.JSON').
+    $http.get('assets/recruiters.JSON').
     success(function(data, status, headers, config) {
       console.log(data);
       $scope.data = data[$scope.company];
