@@ -1,0 +1,86 @@
+html {
+  background-color: rgb(240, 255, 241);
+  box-sizing: border-box;
+  font-family: "Merriweather", sans-serif;
+  background-image: url('../assets/denim.png');
+}
+
+body {
+  width: 100%;
+  max-width: 700px;
+  margin: 0 auto;
+  color: rgb(40, 40, 40);
+  background-color: #FFFFFF;
+  background-image: url('../assets/sos.png');
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Raleway", cursive;
+}
+
+
+header {
+  padding: 1em;
+}
+
+.basic {
+  padding: 1em;
+}
+
+.half {
+  width: 100%;
+}
+img {
+  display: block;
+  margin: 0 auto;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+}
+
+.summary {
+  clear: both;
+  padding: 1em;
+}
+
+footer {
+  padding: 1em;
+  text-align: center;
+}
+
+footer a {
+  width: 100px;
+  height: 100px;
+  color: #FFFFFF;
+}
+
+footer i {
+  padding: 1em;
+  background-color: rgb(69, 69, 69);
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+}
+@media (min-width: 599px) {
+  body{
+    box-shadow: 0 5px 0 rgb(101, 101, 101);
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+  }
+}
+
+@media (min-width: 660px) {
+  .half {
+    width: 50%;
+    float: left;
+    margin: 0 auto;
+  }
+}
