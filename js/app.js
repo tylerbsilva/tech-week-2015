@@ -1,11 +1,10 @@
-angular.module('thankYouApp', [])
-  .controller('thankYouController', ['$scope', '$http', '$location', function($scope, $http, $location){
+var app = angular.module('thankYouApp', []);
+
+app.controller('thankYouController', ['$scope', '$http', '$location', function($scope, $http, $location){
     // grab the path
     $scope.wayfinding = $location.path();
-    console.log($scope.wayfinding);
     // remove the slash
     $scope.company = $scope.wayfinding.substring(1);
-    console.log($scope.company);
     // get recruiter list
     $http.get('assets/recruiters.JSON').
     success(function(data, status, headers, config) {
@@ -34,25 +33,4 @@ angular.module('thankYouApp', [])
     $scope.twitter = 'tysilva';
     $scope.github = 'tylerbsilva';
     $scope.linkedIn = 'tylerbsilva';
-  }])
-
-  .directive('thankYou', function(){
-    return {
-      restrict: 'E',
-      templateUrl: './js/templates/thank-you.html'
-    };
-  })
-
-  .directive('basicInfo', function(){
-    return {
-      restrict: 'E',
-      templateUrl: './js/templates/basic-info.html'
-    };
-  })
-
-  .directive('socialMedia', function(){
-    return {
-      restrict: 'E',
-      templateUrl: './js/templates/social-media.html'
-    };
-  });
+}]);

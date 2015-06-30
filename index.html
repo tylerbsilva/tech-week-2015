@@ -31,13 +31,38 @@
   </head>
   <body>
     <header>
-      <thank-you></thank-you>
+      <h1>Thank you, {{userName}}!</h1>
+      <p>{{message}}</p>
     </header>
     <section>
-      <basic-info></basic-info>
+      <div class="basic">
+        <div class="half">
+          <img src="{{pathToImg}}" alt="{{name}}">
+        </div>
+        <div class="half">
+          <h3>BASIC INFO:</h3>
+          <ul>
+            <li><strong>Name: </strong>{{yourName}}</li>
+            <li><strong>Title: </strong>{{jobTitle}}</li>
+            <li><strong>Website: </strong><a href="http://{{website}}">{{website}}</a></li>
+            <li><strong>E-Mail: </strong><a href="mailto:{{email}}?subject={{eventName}}">{{email}}</a></li>
+            <li><strong>Phone: </strong><a href="tel:+1{{phone}}">{{phone}}</a></li>
+          </ul>
+          <form method="get" action="{{pathToResume}}" target="_blank">
+            <button type="submit">RESUME</button>
+          </form>
+        </div>
+      </div>
+      <div class="summary">
+        <h3>SUMMARY:</h3>
+        <p>{{summary}}</p>
+      </div>
     </section>
     <footer>
-      <social-media></social-media>
+      <a href="https://www.facebook.com/{{facebook}}" target="_blank"><i class="fa fa-facebook-square fa-lg"></i></a>
+      <a href="https://www.twitter.com/{{twitter}}" target="_blank"><i class="fa fa-twitter fa-lg"></i></a>
+      <a href="https://www.github.com/{{github}}" target="_blank"><i class="fa fa-github fa-lg"></i></a>
+      <a href="https://www.linkedin.com/in/{{linkedIn}}" target="_blank"><i class="fa fa-linkedin fa-lg"></i></a>
     </footer>
   </body>
 </html>
